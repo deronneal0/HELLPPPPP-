@@ -1,0 +1,16 @@
+friends_only= {"Jean":1234, "Nighting":12345, "Iceman":123456}
+
+i = int(input("type your pin:"))
+
+if i in friends_only.values():
+     print("Welcome")
+
+else:
+    print("Incorrect Pin!")
+    print("The Following only has access:")
+
+for access in friends_only.keys():
+    print(access)
+
+
+
